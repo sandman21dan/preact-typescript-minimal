@@ -1,12 +1,13 @@
 {
-  "name": "preact-playground",
+  "name": "preact-typescript-minimal",
   "version": "1.0.0",
   "description": "Minimal preact typescript starter",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
     "build:info": "npm run build -- --detailed-report",
+    "build": "parcel build src/index.html --public-url ./",
+    "deploy": "gh-pages -d ./dist",
+    "start": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daniel Perez",
@@ -15,6 +16,7 @@
     "preact": "^8.4.2"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "parcel-bundler": "^1.11.0",
     "typescript": "^3.3.3"
   }
