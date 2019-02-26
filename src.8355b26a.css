@@ -1,0 +1,1 @@
+.app{display:flex;flex-direction:column;min-height:100vh}.app__header{height:4rem;background-color:#000}.app__content{flex-grow:1}.app__footer{height:8rem;background-color:#000}
